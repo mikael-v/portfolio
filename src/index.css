@@ -308,6 +308,44 @@ a:hover {
   display: flex;
 }
 
+.project-content {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.video-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.text-section {
+  flex: 2;
+}
+
+.indivDesc {
+  margin-bottom: 10px;
+}
+
+.indivStack {
+  font-weight: bold;
+}
+
+#images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 40px;
+}
+
+.project-img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 550px;
+  padding: 10px;
+}
+
 button:hover {
   border-color: #646cff;
 }
