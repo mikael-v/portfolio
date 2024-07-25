@@ -3,6 +3,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import ContactPage from "./components/Contact";
+import AllProjects from "./components/ProjectsPage";
 
 import "../src/index.css";
 
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="contact" element={<ContactPage />} />
+        <Route path="projects" element={<AllProjects />} />
       </Routes>
     </BrowserRouter>
   );

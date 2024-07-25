@@ -22,15 +22,14 @@ function Header({ onToggleMenu }) {
         <div id="dropdown-menu">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/projects">My Projects</a>
+              <Link to="/projects">My Projects</Link>
             </li>
 
             <li>
               <Link to="/contact">Contact Me</Link>
-              {/* <a href="contact">Contact Me</a> */}
             </li>
           </ul>
         </div>

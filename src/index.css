@@ -230,6 +230,84 @@ a:hover {
   padding: 50px;
 }
 
+.slider {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.item {
+  background-color: #442249;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+  left: calc(50% - 110px);
+  top: 0;
+  margin: 1% 25% 1% 25%;
+  /* top right bottom left */
+  display: flex;
+}
+.item:hover {
+  border: 5px solid #e49fff;
+  transform: scale(1.02);
+}
+
+.stack,
+.indivStack {
+  font-weight: bold;
+}
+
+.item-left {
+  margin-right: 3%;
+  position: relative;
+}
+
+.item-left h1 {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  z-index: 10;
+  padding: 10px;
+}
+
+.item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item h1 {
+  color: #e9e9e9;
+  text-shadow: 3px 0px #180d1ab0;
+  font-size: 40px;
+}
+
+.item img {
+  width: 500px;
+  opacity: 70%;
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  position: relative;
+  display: block;
+  margin: 3% auto 0% auto;
+}
+
+#buttons {
+  display: flex;
+}
+
 button:hover {
   border-color: #646cff;
 }
