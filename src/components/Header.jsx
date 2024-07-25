@@ -10,6 +10,11 @@ function Header({ onToggleMenu }) {
     onToggleMenu(!isShown);
   }
 
+  function handleLinkClick() {
+    setIsShown(false);
+    onToggleMenu(false);
+  }
+
   return (
     <div id="header">
       <h3 id="name">
@@ -22,14 +27,19 @@ function Header({ onToggleMenu }) {
         <div id="dropdown-menu">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={handleLinkClick}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/projects">My Projects</Link>
+              <Link to="/projects" onClick={handleLinkClick}>
+                My Projects
+              </Link>
             </li>
-
             <li>
-              <Link to="/contact">Contact Me</Link>
+              <Link to="/contact" onClick={handleLinkClick}>
+                Contact Me
+              </Link>
             </li>
           </ul>
         </div>

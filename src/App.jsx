@@ -5,7 +5,6 @@ import Homepage from "./components/Homepage";
 import ContactPage from "./components/Contact";
 import AllProjects from "./components/ProjectsPage";
 import OneProject from "./components/OneProject";
-
 import "../src/index.css";
 
 function App() {
