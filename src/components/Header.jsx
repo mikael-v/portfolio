@@ -29,7 +29,7 @@ function Header({ onToggleMenu }) {
             </li>
 
             <li>
-              <Link to="/contacts">Contact Me</Link>
+              <Link to="/contact">Contact Me</Link>
               {/* <a href="contact">Contact Me</a> */}
             </li>
           </ul>

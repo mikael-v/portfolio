@@ -190,7 +190,6 @@ a:hover {
   font-size: 16px;
   cursor: pointer;
   border: none;
-
   color: white;
   border-radius: 5px;
 }
@@ -198,6 +197,41 @@ a:hover {
 #footer-buttons {
   display: flex;
   justify-content: center;
+}
+
+.contact-page {
+  padding: 100px 450px 100px 450px;
+}
+
+#contact-p {
+  font-size: large;
+  color: #fdf8ff;
+}
+
+#social-icons {
+  justify-content: center;
+  display: flex;
+}
+
+.social-icon {
+  height: 40px;
+  padding: 20px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.social-icon:hover {
+  color: #e49fff;
+}
+
+#contact-links {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+button:hover {
+  border-color: #646cff;
 }
 
 h1 {
