@@ -21,14 +21,6 @@ function OneProject() {
         </Link>
       </div>
       <div className="project-content">
-        <div className="video-section">
-          <ReactPlayer
-            id="currentDemo"
-            url={project.demo}
-            playing={false}
-            controls={true}
-          />
-        </div>
         <div className="text-section">
           <div className="title-section">
             <h1>
@@ -48,6 +40,16 @@ function OneProject() {
               />
             </Link>
           </div>
+          <div className="video-section">
+            <ReactPlayer
+              id="currentDemo"
+              width="100%"
+              height="100%"
+              url={project.demo}
+              playing={false}
+              controls={true}
+            />
+          </div>
           <p className="indivDesc">{project.description}</p>
           <p className="indivStack">Tech Stack: {project.stack.join(", ")}</p>
           <p></p>
@@ -60,7 +62,6 @@ function OneProject() {
             className="project-img"
             src={img}
             alt={`${project.title} image ${index + 1}`}
-            style={{ height: "500px" }}
           />
         ))}
       </section>

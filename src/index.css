@@ -370,6 +370,10 @@ a:hover {
   align-items: center;
 }
 
+.project-img {
+  height: 500px;
+}
+
 .gh-icon {
   height: 40px;
   padding: 20px;
@@ -406,6 +410,10 @@ a:hover {
     margin-right: 0;
     justify-content: center;
     align-items: center;
+  }
+
+  #dropdown-menu {
+    right: 0;
   }
 
   #intro {
@@ -479,5 +487,28 @@ a:hover {
 
   .item h1 {
     font-size: 30px;
+  }
+
+  .project-content {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  #currentDemo {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .video-section {
+    position: relative;
+    padding-top: 56.25%;
+  }
+
+  .project-img {
+    height: max-content;
+    width: 100%;
   }
 }
