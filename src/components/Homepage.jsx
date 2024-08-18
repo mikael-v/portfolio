@@ -1,5 +1,6 @@
 import profilePhoto from "../assets/images/profilePhoto.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import CV from "../assets/CV.pdf";
 
 function Homepage() {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ function Homepage() {
         <button className="footer-button" onClick={handleClick}>
           Contact Me
         </button>
-        <a href="../src/cv-file/myCV.pdf" target="_blank">
+        <a href={CV} target="_blank">
           <button className="footer-button">View CV</button>
         </a>
       </section>
