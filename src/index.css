@@ -432,4 +432,21 @@ a:hover {
   #wrapper {
     display: block;
   }
+
+  .contact-page {
+    padding: 10px;
+  }
+
+  .contact-page h1 {
+    text-align: center;
+  }
+
+  #contact-p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #contact-links {
+    padding: 10px;
+  }
 }
