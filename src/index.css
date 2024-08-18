@@ -320,11 +320,6 @@ a:hover {
   margin-top: 20px;
 }
 
-.video-section {
-  flex: 1;
-  margin-right: 20px;
-}
-
 .text-section {
   flex: 2;
 }
@@ -500,6 +495,8 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .video-section {

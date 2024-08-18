@@ -14,7 +14,7 @@ function OneProject() {
   }
 
   return (
-    <div className="container">
+    <div className="container ">
       <div className="back-button-container">
         <Link to="/projects">
           <button className="back-button">Back to All Projects</button>
