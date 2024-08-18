@@ -387,3 +387,49 @@ a:hover {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 95vw;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #intro {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+
+  #intro p {
+    font-size: 30px;
+  }
+
+  #wrapper {
+    flex-direction: column;
+  }
+
+  #profileImg {
+    width: 250px;
+    border-radius: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #intro-text {
+    text-align: center;
+  }
+
+  #wrapper {
+    display: block;
+  }
+}
