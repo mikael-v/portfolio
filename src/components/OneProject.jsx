@@ -1,7 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import projects from "../../projectsData";
 import React from "react";
 import ReactPlayer from "react-player";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function OneProject() {
   const { id } = useParams();
@@ -13,6 +15,11 @@ function OneProject() {
 
   return (
     <div className="container">
+      <div className="back-button-container">
+        <Link to="/projects">
+          <button className="back-button">Back to All Projects</button>
+        </Link>
+      </div>
       <div className="project-content">
         <div className="video-section">
           <ReactPlayer
@@ -23,9 +30,27 @@ function OneProject() {
           />
         </div>
         <div className="text-section">
-          <h1>{project.title}</h1>
+          <div className="title-section">
+            <h1>
+              {project.link ? (
+                <Link to={project.link} target="_blank">
+                  {project.title}
+                </Link>
+              ) : (
+                project.title
+              )}
+            </h1>
+            <Link to={project.repo}>
+              <FontAwesomeIcon
+                alt="github icon that links to the repository for this project"
+                className="gh-icon"
+                icon={faGithub}
+              />
+            </Link>
+          </div>
           <p className="indivDesc">{project.description}</p>
           <p className="indivStack">Tech Stack: {project.stack.join(", ")}</p>
+          <p></p>
         </div>
       </div>
       <section id="images">
@@ -35,6 +60,7 @@ function OneProject() {
             className="project-img"
             src={img}
             alt={`${project.title} image ${index + 1}`}
+            style={{ height: "500px" }}
           />
         ))}
       </section>

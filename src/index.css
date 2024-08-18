@@ -346,6 +346,35 @@ a:hover {
   padding: 10px;
 }
 
+.back-button {
+  background-color: #242424;
+  border: #414141 1px solid;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.back-button:hover {
+  cursor: pointer;
+}
+
+.title-section {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.gh-icon {
+  height: 40px;
+  padding: 20px;
+  margin-top: 0;
+}
+
+.gh-icon:hover {
+  color: #e49fff;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
