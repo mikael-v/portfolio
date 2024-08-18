@@ -32,7 +32,6 @@ function AllProjects() {
                   id="coverImg"
                   src={projects[currentSlide].imgs[0]}
                   alt=""
-                  style={{ width: "500px", height: "500px" }}
                 />
               </Link>
             </div>

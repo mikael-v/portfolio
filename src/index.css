@@ -294,6 +294,11 @@ a:hover {
   opacity: 70%;
 }
 
+#coverImg {
+  width: 500px;
+  height: 500px;
+}
+
 .transparent-button {
   background-color: transparent;
   border: none;
@@ -448,5 +453,31 @@ a:hover {
 
   #contact-links {
     padding: 10px;
+  }
+
+  .projects-container {
+    padding-top: 10px;
+    margin: 0%;
+  }
+
+  .item {
+    margin: 0;
+    display: block;
+    width: 300px;
+    padding: 10px;
+  }
+
+  #coverImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .item img {
+    width: 100px;
+    opacity: 70%;
+  }
+
+  .item h1 {
+    font-size: 30px;
   }
 }
